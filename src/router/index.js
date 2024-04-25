@@ -21,6 +21,31 @@ const routes = [
     name: "admin.home",
     component: () => import("../components/admin/AdminHome.vue"),
   },
+  {
+    path: "/admin/add",
+    name: "admin.add",
+    component: () => import("../components/admin/Add.vue"),
+  },
+  {
+    path: "/admin/edit",
+    name: "admin.edit",
+    component: () => import("../components/admin/Edit.vue"),
+  },
+  {
+    path: "/user/borrow",
+    name: "form.borrow",
+    component: () => import("../components/user/borrow/form.vue"),
+  },
+  {
+    path: "/user/thanks",
+    name: "thank",
+    component: () => import("../components/user/borrow/thank.vue"),
+  },
+  {
+    path: "/user/intro",
+    name: "intro",
+    component: () => import("../components/user/body/intro.vue"),
+  },
 ];
 
 const router = createRouter({
